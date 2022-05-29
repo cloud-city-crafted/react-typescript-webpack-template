@@ -17,10 +17,22 @@ This React template was created from scratch using the bare minimum package depe
 Review the [commit history](https://github.com/cloud-city-crafted/react-typescript-webpack-template/commits/main) to see which files were created/edited for each step of the configuration process.
 
 1. [Initialize Project](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/1)
-2. Setup TypeScript
+2. [Setup TypeScript](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/2)
 3. Setup React
 4. Setup Jest
 5. Setup Webpack
+
+## ⚛️ What?
+
+This project template only uses the dependencies and configurations needed to:
+
+- Develop using TypeScript (using `.tsx` files)
+
+### 🛠 Tooling
+- [TypeScript](https://www.typescriptlang.org/): A strongly typed language built on top of JavaScript.
+  - [typescript](https://www.npmjs.com/package/typescript): Core TypeScript programming language
+  - [ts-node](https://www.npmjs.com/package/ts-node): TypeScript execution engine for Node.js
+  - [@types/node](https://www.npmjs.com/package/@types/node): Type definitions for Node.js
 
 ## 🪪 License
 
