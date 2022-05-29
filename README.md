@@ -9,9 +9,29 @@
 ## ⚡️ Quick Start
 
 Ensure [Node.js](https://nodejs.org/en/download/) is installed. Version 10.13.0 (LTS) or higher is required.
+
 > **Recommended**: Use a Node version manager like [nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-Dependency installation is done using the `npm install` command from the project root.
+Dependency installation is managed via `npm`. Once cloned, you can install dependencies from the project root:
+
+```shell
+npm install
+```
+
+Once dependencies are installed, you can run the React local development server on port `8080`:
+
+```shell
+npm start
+```
+
+To test components, you can run all Jest suites:
+
+```shell
+npm test
+```
+
+And boom! You're ready to create a new React application with TypeScript! 🎉
+
 ## 🙋🏽 Why?
 
 While [Create React App](https://create-react-app.dev/) is a great way to jump start a simple project, it unfortunately abstracts away most of the configuration. This makes it difficult to understand React project configuration for quick customization or required packages for dependency management.
@@ -26,7 +46,7 @@ Review the [commit history](https://github.com/cloud-city-crafted/react-typescri
 2. [Setup TypeScript](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/2)
 3. [Setup React](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/3)
 4. [Setup Jest](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/4)
-5. Setup Webpack
+5. [Setup Webpack](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/5)
 
 ## ⚛️ What?
 
@@ -34,6 +54,9 @@ This project template only uses the dependencies and configurations needed to:
 
 - Create a React Web Application
 - Develop React Components using TypeScript (using `.tsx` files)
+- Test React Components using Jest
+- Bundle a React Web Application for Production
+- Serve a React Web Application locally with automatic reloads on save
 
 The final state is a React app equivalent to the starting point of [Create React App](https://create-react-app.dev/).
 
@@ -54,6 +77,32 @@ The final state is a React app equivalent to the starting point of [Create React
   - [jest-environment-jsdom](https://www.npmjs.com/package/jest-environment-jsdom): Simulates a DOM environment during jest tests (See: [Jest DOM Manipulation Guide](https://jestjs.io/docs/tutorial-jquery))
   - [@testing-library/jest-dom](https://www.npmjs.com/package/@testing-library/jest-dom): Jest matchers (e.g. `toHaveClass`, `toBeChecked`) to test the state of the DOM
   - [@testing-library/react](https://www.npmjs.com/package/@testing-library/react): React DOM testing utilities (e.g. `.queryByText`, `.getByRole`)
+- [webpack](https://webpack.js.org/): An extensible static module bundler for JavaScript applications.
+  - [webpack](https://www.npmjs.com/package/webpack): Core webpack bundler
+  - [webpack-cli](https://www.npmjs.com/package/webpack-cli): CLI tooling for webpack (required for `npm` scripts that call `webpack`)
+  - [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server): Development server with live reloading
+  - [Loaders](https://webpack.js.org/loaders/)
+    - [ts-loader](https://www.npmjs.com/package/ts-loader): Loads TypeScript files when bundling
+    - [css-loader](https://www.npmjs.com/package/css-loader): Interprets and resolves `@import` and `url()` in CSS files when bundling
+    - [style-loader](https://www.npmjs.com/package/style-loader): Injects CSS into the DOM when bundling
+  - [Plugins](https://webpack.js.org/plugins/)
+    - [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin): Generate HTML files when bundling
+    - [copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin): Copies files to output directory when bundling
+    - [webpack-merge](https://www.npmjs.com/package/webpack-merge): Merges webpack configurations (used for copying common configurations for multiple environments)
+
+
+### 📜 Development Scripts
+
+Initial development scripts are available to local development and testing. You can find these in the `scripts` attribute in [package.json](./package.json).
+
+| Command                 | Description                                                                            |
+| ----------------------- | -------------------------------------------------------------------------------------- |
+| `npm install`           | Install all dependent application packages                                             |
+| `npm start`             | Start a local development web server at http://localhost:8080 using webpack-dev-server |
+| `npm test`              | Run the full test suite using Jest                                                     |
+| `npm run build`         | Bundle application for Production using webpack                                        |
+| `npm run test:watch`    | Watch files for changes and rerun tests related to changed files                       |
+| `npm run test:coverage` | Generate and display a test coverage report                                            |
 
 ## 🪪 License
 
