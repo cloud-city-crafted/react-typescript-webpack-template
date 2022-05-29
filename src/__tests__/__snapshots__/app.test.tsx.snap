@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app component 1`] = `
+<div>
+  <div
+    class="app"
+    role="main"
+  >
+    <header
+      class="app-header"
+    >
+      <img
+        alt="logo"
+        class="app-logo"
+        src="test-file-stub"
+      />
+      <p>
+        Edit 
+        <code>
+          src/app.tsx
+        </code>
+         and save to reload.
+      </p>
+      <a
+        class="app-link"
+        href="https://reactjs.org"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Learn React
+      </a>
+    </header>
+  </div>
+</div>
+`;
