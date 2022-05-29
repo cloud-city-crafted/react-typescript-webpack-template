@@ -18,7 +18,7 @@ Review the [commit history](https://github.com/cloud-city-crafted/react-typescri
 
 1. [Initialize Project](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/1)
 2. [Setup TypeScript](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/2)
-3. Setup React
+3. [Setup React](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/3)
 4. Setup Jest
 5. Setup Webpack
 
@@ -26,14 +26,21 @@ Review the [commit history](https://github.com/cloud-city-crafted/react-typescri
 
 This project template only uses the dependencies and configurations needed to:
 
-- Develop using TypeScript (using `.tsx` files)
+- Create a React Web Application
+- Develop React Components using TypeScript (using `.tsx` files)
+
+The final state is a React app equivalent to the starting point of [Create React App](https://create-react-app.dev/).
 
 ### 🛠 Tooling
+- [React](https://reactjs.org): An open source JavaScript library for building UIs
+  - [react](https://www.npmjs.com/package/react): Core React library
+  - [@types/react](https://www.npmjs.com/package/@types/react): Type definitions for `React`
+  - [react-dom](https://www.npmjs.com/package/react-dom): Renders React to DOM
+  - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): Type definitions for `ReactDOM`
 - [TypeScript](https://www.typescriptlang.org/): A strongly typed language built on top of JavaScript.
   - [typescript](https://www.npmjs.com/package/typescript): Core TypeScript programming language
   - [ts-node](https://www.npmjs.com/package/ts-node): TypeScript execution engine for Node.js
   - [@types/node](https://www.npmjs.com/package/@types/node): Type definitions for Node.js
-
 ## 🪪 License
 
 This project template is [MIT licensed](https://github.com/cloud-city-crafted/react-typescript-webpack-template/blob/main/LICENSE).
