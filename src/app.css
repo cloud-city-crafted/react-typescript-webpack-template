@@ -1,40 +1,17 @@
 /* Modified from the create-react-app TypeScript template */
 /* See: https://github.com/facebook/create-react-app/blob/main/packages/cra-template-typescript/template/src/App.css */
 .app {
-  text-align: center;
+  @apply text-center;
 }
 
 .app-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  @apply bg-react-slate min-h-[100vh] flex flex-col items-center justify-center text-base text-white;
 }
 
 .app-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .app-logo {
-    animation: app-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes app-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  @apply animate-spin-slow h-[40vmin] pointer-events-none;
 }
 
 .app-link {
-  color: #61dafb;
+  @apply text-react-light-blue;
 }
