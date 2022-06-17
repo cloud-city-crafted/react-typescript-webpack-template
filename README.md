@@ -48,6 +48,8 @@ Review the [commit history](https://github.com/cloud-city-crafted/react-typescri
 4. [Setup Jest](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/4)
 5. [Setup Webpack](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/5)
 
+You can also find more detailed steps in the [How to Setup a React App with TypeScript + Webpack from Scratch](https://dev.to/thelandolorien/how-to-setup-a-react-app-with-typescript-webpack-from-scratch-19cd) post on [DEV](https://dev.to/).
+
 ## ⚛️ What?
 
 This project template only uses the dependencies and configurations needed to:
