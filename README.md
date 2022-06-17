@@ -40,13 +40,14 @@ While [Create React App](https://create-react-app.dev/) is a great way to jump s
 
 This React template was created from scratch using the bare minimum package dependencies needed to run a React + TypeScript project that is bundled with Webpack and tested with Jest.
 
-Review the [commit history](https://github.com/cloud-city-crafted/react-typescript-webpack-template/commits/main) to see which files were created/edited for each step of the configuration process.
+Review the [pull request history](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pulls?q=is%3Apr+sort%3Acreated-asc) to see which files were created/edited for each step of the configuration process.
 
 1. [Initialize Project](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/1)
 2. [Setup TypeScript](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/2)
 3. [Setup React](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/3)
 4. [Setup Jest](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/4)
 5. [Setup Webpack](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/5)
+6. (Optional) [Setup Tailwind CSS](https://github.com/cloud-city-crafted/react-typescript-webpack-template/pull/6)
 
 You can also find more detailed steps in the [How to Setup a React App with TypeScript + Webpack from Scratch](https://dev.to/thelandolorien/how-to-setup-a-react-app-with-typescript-webpack-from-scratch-19cd) post on [DEV](https://dev.to/).
 
@@ -59,6 +60,7 @@ This project template only uses the dependencies and configurations needed to:
 - Test React Components using Jest
 - Bundle a React Web Application for Production
 - Serve a React Web Application locally with automatic reloads on save
+- (Optional) Build custom design systems using Tailwind CSS utility classes
 
 The final state is a React app equivalent to the starting point of [Create React App](https://create-react-app.dev/).
 
@@ -87,10 +89,18 @@ The final state is a React app equivalent to the starting point of [Create React
     - [ts-loader](https://www.npmjs.com/package/ts-loader): Loads TypeScript files when bundling
     - [css-loader](https://www.npmjs.com/package/css-loader): Interprets and resolves `@import` and `url()` in CSS files when bundling
     - [style-loader](https://www.npmjs.com/package/style-loader): Injects CSS into the DOM when bundling
+    - (Optional) [postcss-loader](https://www.npmjs.com/package/postcss-loader): Processes CSS with PostCSS
   - [Plugins](https://webpack.js.org/plugins/)
-    - [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin): Generate HTML files when bundling
+    - [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin): Generates HTML files when bundling
     - [copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin): Copies files to output directory when bundling
     - [webpack-merge](https://www.npmjs.com/package/webpack-merge): Merges webpack configurations (used for copying common configurations for multiple environments)
+- (Optional) [Tailwind CSS](https://tailwindcss.com): A CSS framework with pre-built utility styling classes (e.g. `text-center`)
+  - [tailwindcss](https://www.npmjs.com/package/tailwindcss): Core Tailwind CSS framework
+  - [@types/tailwindcss](https://www.npmjs.com/package/@types/tailwindcss): TypeScript definitions for `tailwindcss`
+- (Optional) [PostCSS](https://postcss.org/): A CSS transformer for JavaScript
+    - [postcss](https://www.npmjs.com/package/postcss): Core PostCSS tool
+    - [Plugins](https://www.postcss.parts/)
+      - [autoprefixer](https://www.npmjs.com/package/autoprefixer): Adds vendor prefixes to CSS rules
 
 
 ### 📜 Development Scripts
